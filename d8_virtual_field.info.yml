@@ -1,0 +1,5 @@
+name: d8_virtual_field
+type: module
+description: d8_virtual_field for Mysql GENEREATED Virtual field (I don't want to try and write to DB)
+core: 8.x
+package: Custom

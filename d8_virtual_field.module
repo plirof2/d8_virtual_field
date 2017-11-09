@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains d8_virtual_field.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function d8_virtual_field_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the d8_virtual_field module.
+    case 'help.page.d8_virtual_field':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('d8_virtual_field for Mysql GENEREATED Virtual field (I don&#039;t want to try and write to DB)') . '</p>';
+      return $output;
+
+    default:
+  }
+}
